@@ -1,9 +1,18 @@
 import "./App.css";
+import { Footer } from "./components/Footer";
+import { Navbar } from "./components/Navbar";
+import { SectionOne } from "./components/SectionOne";
+import { SectionThree } from "./components/SectionThree";
+import { SectionTwo } from "./components/SectionTwo";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Navbar />
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
+      <Footer />
     </>
   );
 }
