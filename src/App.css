@@ -5,3 +5,23 @@
 .custom-profile {
   @apply flex items-center space-x-2 cursor-pointer hover:text-green-500;
 }
+
+/* footer */
+.custom-footer-h3 {
+  @apply mb-4 mt-4 text-gray-400 text-xs font-black tracking-widest w-fit;
+}
+
+.custom-footer-p {
+  @apply hover:text-green-500 text-base leading-6 font-normal cursor-pointer w-fit;
+}
+
+button:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+    var(--tw-ring-offset-width) #1c75de !important;
+}
+
+.custom-plancard-button:focus {
+  --tw-ring-offset-shadow: 0 0 0 3px white !important;
+}
+
+/* font-family: CircularSp,spotify-circular,Helvetica,Arial,sans-serif; */

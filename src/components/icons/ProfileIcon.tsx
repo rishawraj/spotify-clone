@@ -1,6 +1,6 @@
 import { SVGProps, useEffect, useRef, useState } from "react";
 
-export function BiPersonCircle(props: SVGProps<SVGSVGElement>) {
+export function BiPersonCircleComponent(props: SVGProps<SVGSVGElement>) {
   const [clicked, setClicked] = useState(false);
   const myRef = useRef<HTMLDivElement>(null);
 

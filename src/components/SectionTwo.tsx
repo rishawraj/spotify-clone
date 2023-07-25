@@ -5,40 +5,47 @@ import four from "../assets/four.png";
 
 function SectionTwo() {
   return (
-    <section className="bg-green-200 flex flex-col items-center">
-      <h2 className="text-4xl">Why go Premium</h2>
+    <section className="flex flex-col mb-10">
+      <h2 className="text-3xl font-semibold text-center my-5 md:my-14 md:text-4xl">
+        Why go Premium?
+      </h2>
 
-      <div className="flex flex-col">
-        <ul className="flex">
-          <li className="flex gap-2">
-            <img style={{ width: "100px", height: "100px" }} src={one} alt="" />
-            <div>
-              <h3>Download music.</h3>
+      <div className="w-full flex justify-center">
+        <div className="flex flex-col md:flex-row justify-between gap-y-14 flex-wrap p-4 mb-10">
+          <div className="flex items-center my-2 gap-6 md:w-3/6 ">
+            <img className="w-24 h-fit" src={one} alt="" />
+            <div className="flex flex-col gap-2">
+              <h3 className="text-lg font-semibold">Download music.</h3>
               <p>Listen anywhere.</p>
             </div>
-          </li>
-          <li>
-            <img style={{ width: "100px" }} src={two} alt="" />
-            <div>
-              <h3>Ad-free music listening.</h3>
+          </div>
+
+          <div className="flex items-center my-2 md:w-2/4 gap-6 ">
+            <img className="w-24 h-fit" src={two} alt="" />
+            <div className="flex flex-col gap-2">
+              <h3 className="text-lg font-semibold">
+                Ad-free music listening.
+              </h3>
               <p>Enjoy nonstop music.</p>
             </div>
-          </li>
-          <li>
-            <img style={{ width: "100px" }} src={three} alt="" />
-            <div>
-              <h3>Play any song.</h3>
+          </div>
+
+          <div className="flex items-center md:w-2/4 my-2 gap-6 ">
+            <img className="w-24 h-fit" src={three} alt="" />
+            <div className="flex flex-col gap-2">
+              <h3 className="text-lg font-semibold">Play any song.</h3>
               <p>Even on mobile.</p>
             </div>
-          </li>
-          <li>
-            <img style={{ width: "100px" }} src={four} alt="" />
-            <div>
-              <h3>Unlimited skips.</h3>
+          </div>
+
+          <div className="flex items-center my-2 md:w-2/4 gap-6 ">
+            <img className="w-24 h-fit" src={four} alt="" />
+            <div className="flex flex-col gap-2">
+              <h3 className="text-lg font-semibold">Unlimited skips.</h3>
               <p>Just hit next.</p>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
   );
