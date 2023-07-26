@@ -2,7 +2,7 @@ import { BiCheck } from "react-icons/bi";
 
 function PlanCard() {
   return (
-    <div className="font-Spotify flex flex-col bg-white border-2 p-5 w-96 mb-10 rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+    <div className="font-Spotify flex flex-col bg-white border-2 p-5 w-96 mb-10 rounded-2xl shadow-[0_3px_10px_rgb(0,0,0,0.2)] xl:w-64">
       <span className="bg-blue-500 text-sm text-white px-2 py-1 rounded w-fit font-bold">
         1 month free
       </span>

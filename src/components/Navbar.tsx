@@ -35,8 +35,8 @@ function Navbar() {
 
   return (
     <header className="bg-black">
-      <nav className="bg-black text-white p-2 max-w-7xl mx-auto lg:p-5 lg:max-w-5xl md:max-w-4xl sm:max-w-3xl xs:max-w-2xl flex justify-between px-5 items-center">
-        <div className="flex items-center space-x-2">
+      <nav className="bg-black text-white p-2 max-w-7xl mx-auto lg:p-5 lg:max-w-5xl md:max-w-3xl sm:max-w-3xl xs:max-w-2xl flex justify-between px-5 items-center">
+        <div className="flex items-center gap-2">
           <img src={SpotifyIcon} alt="Spotify Icon" />
           <h1 className="font-semibold">Spotify Clone</h1>
         </div>

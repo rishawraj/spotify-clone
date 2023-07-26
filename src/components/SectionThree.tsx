@@ -20,7 +20,7 @@ function SectionThree() {
         <img src={paypalLogo} alt="paypal" className="w-7" />
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 xl:flex-row">
         <PlanCard />
         <PlanCard />
         <PlanCard />

@@ -1,8 +1,8 @@
 function SectionOne() {
   return (
     <main className="bg-[#1C75DE] text-white ">
-      <div className="max-w-5xl mx-auto p-3">
-        <h1 className="text-2xl font-bold py-8 md:text-4xl">
+      <div className="max-w-5xl mx-auto p-3 md:max-w-3xl lg:max-w-5xl">
+        <h1 className="text-2xl font-bold py-8 md:text-4xl ">
           Get Premium free for 1 month
         </h1>
         <p className="text-lg tracking-wide py-2 md:text-2xl">
@@ -26,10 +26,6 @@ function SectionOne() {
           1 month free not avialble for user who have already tried Premium
         </p>
       </div>
-      <div className="hidden sm:block sm:bg-green-500">sm</div>
-      <div className="hidden md:block md:bg-red-500">md</div>
-      <div className="hidden lg:block lg:bg-violet-500">lg</div>
-      <div className="hidden xl:block xl:bg-orange-500">xl</div>
     </main>
   );
   // 0.6875rem

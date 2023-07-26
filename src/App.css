@@ -1,9 +1,9 @@
 .custom-profile-clicked {
-  @apply flex items-center space-x-2 cursor-pointer text-green-500;
+  @apply flex items-center space-x-2 cursor-pointer text-green-500 text-3xl;
 }
 
 .custom-profile {
-  @apply flex items-center space-x-2 cursor-pointer hover:text-green-500;
+  @apply flex items-center space-x-2 cursor-pointer hover:text-green-500 text-3xl;
 }
 
 /* footer */

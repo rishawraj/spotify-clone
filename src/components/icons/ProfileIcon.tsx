@@ -43,40 +43,42 @@ export function BiPersonCircleComponent(props: SVGProps<SVGSVGElement>) {
           ></path>
         </g>
       </svg>
-      <h3>Profile </h3>
-      {clicked ? (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1em"
-          height="1em"
-          viewBox="0 0 16 16"
-          {...props}
-        >
-          <path
-            fill="currentColor"
-            fillRule="evenodd"
-            d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
-          ></path>
-        </svg>
-      ) : (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="1em"
-          height="1em"
-          viewBox="0 0 16 16"
-          {...props}
-        >
-          <path
-            fill="currentColor"
-            fillRule="evenodd"
-            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-          ></path>
-        </svg>
-      )}
+      <h3 className="text-base">Profile </h3>
+      <div className="text-base">
+        {clicked ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            {...props}
+          >
+            <path
+              fill="currentColor"
+              fillRule="evenodd"
+              d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"
+            ></path>
+          </svg>
+        ) : (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            {...props}
+          >
+            <path
+              fill="currentColor"
+              fillRule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            ></path>
+          </svg>
+        )}
+      </div>
 
       {/* tooltip */}
       {clicked && (
-        <div className="absolute bg-gray-200 text-black p-4 w-36 right-30 top-16">
+        <div className="absolute bg-gray-200 text-black p-4 w-36 right-30 top-16 text-base">
           <h3>Account</h3>
           <h3>Log out</h3>
         </div>

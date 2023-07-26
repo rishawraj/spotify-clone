@@ -7,13 +7,13 @@ import { SectionTwo } from "./components/SectionTwo";
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
       <SectionOne />
       <SectionTwo />
       <SectionThree />
       <Footer />
-    </>
+    </div>
   );
 }
 
