@@ -25,3 +25,60 @@ button:focus {
 }
 
 /* font-family: CircularSp,spotify-circular,Helvetica,Arial,sans-serif; */
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.custom-sidenav {
+  animation: slideFromLeft 250ms ease-out;
+}
+
+.custom-sidenav h3 {
+  transform: translateX(120%);
+  animation: slideFromLeft 100ms ease-out forwards;
+}
+
+.custom-sidenav .separator {
+  transform: translateX(120%);
+  animation: slideFromLeft 150ms ease-out forwards;
+}
+
+.custom-sidenav .logo {
+  transform: translateX(120%);
+  animation: slideFromLeft 400ms ease-out forwards;
+}
+
+.custom-sidenav h3:nth-child(1) {
+  animation-delay: 270ms;
+}
+
+.custom-sidenav h3:nth-child(2) {
+  animation-delay: 290ms;
+}
+
+.custom-sidenav h3:nth-child(3) {
+  animation-delay: 310ms;
+}
+
+.custom-sidenav .separator {
+  animation-delay: 330ms;
+}
+
+.custom-sidenav h3:nth-child(4) {
+  animation-delay: 350ms;
+}
+
+.custom-sidenav h3:nth-child(5) {
+  animation-delay: 370ms;
+}
+
+.custom-sidenav h3:nth-child(6) {
+  animation-delay: 390ms;
+}

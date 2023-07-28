@@ -13,6 +13,36 @@ function Navbar() {
     setMenuOpen(!menuOpen);
   };
 
+  useEffect(() => {
+    if (menuOpen) {
+      disableScroll();
+    } else {
+      enableScroll();
+    }
+  }, [menuOpen]);
+
+  const disableScroll = () => {
+    // Get the current scroll position
+    const scrollY = window.scrollY;
+
+    // Prevent scrolling
+    // document.body.style.overflow = "hidden";
+    document.body.style.overflowY = "scroll";
+
+    // Restore the scroll position to prevent the page from jumping
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+  };
+
+  const enableScroll = () => {
+    // Restore the scroll position
+    const scrollY = parseInt(document.body.style.top || "0", 10);
+    document.body.style.overflow = "";
+    document.body.style.position = "";
+    document.body.style.top = "";
+    window.scrollTo(0, Math.abs(scrollY));
+  };
+
   const handleClickOutside = (e: MouseEvent) => {
     if (
       navRef.current &&
@@ -67,28 +97,37 @@ function Navbar() {
           )}
         </div>
         {menuOpen && (
-          <div className="lg:hidden absolute h-full w-full bg-black bg-opacity-75 top-0 left-0 flex justify-end text-">
+          <div className="lg:hidden absolute h-screen w-full bg-black bg-opacity-75 top-0 left-0 flex justify-end overscroll-none">
             <div
               ref={navRef}
-              className="top-0 right-0 h-full lg:w-3/6 md:w-3/6 w-4/5  bg-black text-white p-4 pl-10"
+              className="top-0 right-0 h-full lg:w-3/6 md:w-3/6 w-4/5  bg-black text-white p-4 pl-10 custom-sidenav flex flex-col justify-between "
             >
-              <h3 className="block text-4xl font-semibold my-5 hover:text-green-500 cursor-pointer">
-                Premium
-              </h3>
-              <h3 className="block text-4xl font-semibold my-5 hover:text-green-500 cursor-pointer">
-                Support
-              </h3>
-              <h3 className="block text-4xl font-semibold my-5 hover:text-green-500 cursor-pointer">
-                Download
-              </h3>
-              <div className="h-0.5 w-4 my-10 bg-white"></div>
+              <div>
+                <h3 className="block text-4xl font-semibold my-5 hover:text-green-500 cursor-pointer">
+                  Premium
+                </h3>
+                <h3 className="block text-4xl font-semibold my-5 hover:text-green-500 cursor-pointer">
+                  Support
+                </h3>
+                <h3 className="block text-4xl font-semibold my-5 hover:text-green-500 cursor-pointer">
+                  Download
+                </h3>
 
-              <h3 className="block text-2xl my-4 hover:text-green-500 cursor-pointer">
-                Account
-              </h3>
-              <h3 className="block text-2xl my-4 hover:text-green-500 cursor-pointer">
-                Log out
-              </h3>
+                <div className="h-0.5 w-4 my-10 bg-white separator"></div>
+
+                <h3 className="block text-2xl my-4 hover:text-green-500 cursor-pointer">
+                  Account
+                </h3>
+                <h3 className="block text-2xl my-4 hover:text-green-500 cursor-pointer">
+                  Log out
+                </h3>
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-10 logo">
+                  <img src={SpotifyIcon} alt="Spotify Icon" />
+                  <h1 className="font-semibold">Spotify Clone</h1>
+                </div>
+              </div>
             </div>
           </div>
         )}

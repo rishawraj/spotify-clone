@@ -24,7 +24,7 @@ function PlanCard() {
         <p className="text-base">On demand playback</p>
       </div>
 
-      <button className="custom-plancard-button bg-[#191414] hover:bg-[#0B0909] hover:scale-105 text-white rounded-full cursor-pointer py-3 my-4 uppercase font-semibold focus:outline-none focus:ring-[2px] focus:ring-black focus:ring-offset-4">
+      <button className="custom-plancard-button bg-[#191414] hover:bg-[#0B0909] hover:scale-105 text-white rounded-full cursor-pointer py-3 my-4 uppercase font-semibold focus:outline-none focus:ring-[2px] focus:ring-black focus:ring-offset-4 transition">
         get started
       </button>
 
