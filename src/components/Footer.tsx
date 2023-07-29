@@ -47,9 +47,11 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex cursor-pointer justify-end items-center text-gray-400 gap-2 hover:text-green-500 text-xs">
-          <BiGlobe />
-          <p>USA</p>
+        <div className="flex justify-end items-center text-gray-400 text-xs ">
+          <div className="flex gap-2 cursor-pointer items-center hover:text-green-500">
+            <BiGlobe />
+            <p>USA</p>
+          </div>
         </div>
 
         <div className="text-[10px] cursor-pointer flex justify-between items-start xl:text-[11px]">
@@ -73,7 +75,7 @@ function Footer() {
               Your Privacy Choices
             </p>
           </div>
-          <div className="min-w-[85px]">
+          <div className="min-w-[85px] ml-5">
             <p className="py-2 text-gray-400 hover:text-green-500">
               © 2022 Spotify AB
             </p>

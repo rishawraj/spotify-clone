@@ -78,9 +78,9 @@ export function BiPersonCircleComponent(props: SVGProps<SVGSVGElement>) {
 
       {/* tooltip */}
       {clicked && (
-        <div className="absolute bg-gray-200 text-black p-4 w-36 right-30 top-16 text-base">
-          <h3>Account</h3>
-          <h3>Log out</h3>
+        <div className="absolute bg-white text-black p-4 w-36 top-16 text-base rounded-lg">
+          <h3 className="hover:text-green-500">Account</h3>
+          <h3 className="hover:text-green-500">Log out</h3>
         </div>
       )}
     </div>

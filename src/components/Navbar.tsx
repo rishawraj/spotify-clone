@@ -71,7 +71,7 @@ function Navbar() {
           <h1 className="font-semibold">Spotify Clone</h1>
         </div>
 
-        <div className="hidden lg:flex space-x-5 items-center">
+        <div className="hidden lg:flex space-x-5 items-center font-semibold">
           <h3 className="hover:text-green-500 cursor-pointer">Premium</h3>
           <h3 className="hover:text-green-500 cursor-pointer">Support</h3>
           <h3 className="hover:text-green-500 cursor-pointer">Download</h3>
@@ -123,7 +123,7 @@ function Navbar() {
                 </h3>
               </div>
               <div>
-                <div className="flex items-center gap-2 mb-10 logo">
+                <div className="flex items-center gap-2 mb-16 logo">
                   <img src={SpotifyIcon} alt="Spotify Icon" />
                   <h1 className="font-semibold">Spotify Clone</h1>
                 </div>

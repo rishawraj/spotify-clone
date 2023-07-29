@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Gotham";
+  src: local("Gotham"), url(./fonts/Gotham-Medium\ 500.ttf) format("truetype");
+}
+
+body {
+  font-family: "Gotham", sans-serif;
+}
+
 .custom-profile-clicked {
   @apply flex items-center space-x-2 cursor-pointer text-green-500 text-3xl;
 }
